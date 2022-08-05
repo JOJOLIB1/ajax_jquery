@@ -7,10 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91beaec2-2c05-471a-85fe-27768f98c52f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ajax/web/JQuery-01.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/web/XML.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/web/测试.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/web/类的回顾.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +190,7 @@
       <workItem from="1659603342741" duration="3640000" />
       <workItem from="1659620243338" duration="196000" />
       <workItem from="1659663945699" duration="6547000" />
-      <workItem from="1659702975550" duration="3445000" />
+      <workItem from="1659702975550" duration="4379000" />
     </task>
     <task id="LOCAL-00001" summary="AJAX_8_4">
       <created>1659670698135</created>
@@ -203,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659670698135</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="JQuery初步封装与使用">
+      <created>1659708733557</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659708733557</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +214,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AJAX_8_4" />
-    <option name="LAST_COMMIT_MESSAGE" value="AJAX_8_4" />
+    <MESSAGE value="JQuery初步封装与使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="JQuery初步封装与使用" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
