@@ -7,29 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91beaec2-2c05-471a-85fe-27768f98c52f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ajax_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/ajax.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/src/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/src/demo/FastJSONTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/src/servlet/DemoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/src/servlet/JsonServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/src/servlet/JudgeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/src/util/DBUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/web/AjaxGet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/web/AjaxGetData.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/web/AjaxPost.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/web/JSON.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/web/WEB-INF/lib/fastjson-1.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/web/WEB-INF/lib/mysql-connector-java-8.0.29.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/web/用户名校验.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax_jquery.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/web/JQuery-01.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/web/XML.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/web/测试.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/web/类的回顾.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -65,21 +48,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "E:/Push/ajax_jquery/ajax/web/WEB-INF/lib",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Push/ajax_jquery/ajax/web/WEB-INF/lib&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Push\ajax_jquery\ajax\web\WEB-INF\lib" />
@@ -211,12 +193,25 @@
       <workItem from="1659579072918" duration="2925000" />
       <workItem from="1659603342741" duration="3640000" />
       <workItem from="1659620243338" duration="196000" />
-      <workItem from="1659663945699" duration="6467000" />
+      <workItem from="1659663945699" duration="6547000" />
+      <workItem from="1659702975550" duration="3445000" />
     </task>
+    <task id="LOCAL-00001" summary="AJAX_8_4">
+      <created>1659670698135</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659670698135</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="AJAX_8_4" />
+    <option name="LAST_COMMIT_MESSAGE" value="AJAX_8_4" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

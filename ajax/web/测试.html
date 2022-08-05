@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery测试</title>
+</head>
+<body>
+    <script type="text/javascript" src="JQuery-01.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btn").blur(function () {
+                alert($("#btn").val())
+                $("#div").html("卫视")
+            })
+        })
+    </script>
+    <input type="text" id="btn">
+    <div id="div"></div>
+</body>
+</html>
