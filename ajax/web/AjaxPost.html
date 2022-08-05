@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById("btn").onclick = function () {
+                let xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            document.getElementById("div").innerHTML = this.responseText;
+                        }else {
+                            alert(this.status);
+                        }
+                    }
+                }
+                xhr.open("POST", "/serv/demo?");
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhr.send("key=value");
+            }
+        }
+    </script>
+    <button id="btn">发送AJAX Post请求</button>
+    <div id="div"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById("mybtm").onclick = function () {
+                let xmlHttpRequest = new XMLHttpRequest();
+                xmlHttpRequest.onreadystatechange = function () {
+                    console.log(this.readyState);
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            console.log("完好无损")
+                        }
+                    }else {
+                        console.log(this.status);
+                    }
+                }
+                xmlHttpRequest.open("GET", "/serv/demo", true);
+                xmlHttpRequest.send();
+            }
+        }
+    </script>
+    <input type="button" value="发送AJAX请求" id="mybtm">
+</body>
+</html>

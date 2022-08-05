@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        window.onload = function () {
+            let text = document.getElementById("text");
+            let span = document.getElementById("span");
+            text.onblur = function () {
+                let xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            span.innerHTML = this.responseText;
+                        }else {
+                            alert(this.status);
+                        }
+                    }
+                }
+                xhr.open("POST", "/serv/jud?", true);
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhr.send("username=" + text.value);
+            }
+            text.onfocus = function () {
+                span.innerHTML = "";
+            }
+        }
+    </script>
+    <div><span>用户名</span><span><input type="text" id="text"></span><span id="span"></span></div>
+</body>
+</html>

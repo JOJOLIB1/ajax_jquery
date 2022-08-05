@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    window.onload = function () {
+        document.getElementById("mybtn").onclick = function () {
+            let xmlHttpRequest = new XMLHttpRequest();
+            xmlHttpRequest.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {
+                        alert("顺利执行");
+                    }else {
+                        alert(this.status)
+                    }
+                }
+            }
+            xmlHttpRequest.open("GET", "/serv/demo?key=" + document.getElementById("mytext").value);
+            xmlHttpRequest.send();
+        }
+    }
+</script>
+&nbsp;&nbsp;&nbsp;<input type="button" value="发送AJAX请求" id="mybtn">
+内容:<input type="text" id="mytext">
+</body>
+</html>

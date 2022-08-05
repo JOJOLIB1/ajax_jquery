@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById("show").onclick = function () {
+                let xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            let jsons = JSON.parse(this.responseText);
+                            for (let i in jsons) {
+                                document.getElementById("body").innerHTML += "<tr>" +
+                                    "<td>"+jsons[i].id+"</td>" +
+                                    "<td>"+jsons[i].username+"</td>" +
+                                    "<td>"+jsons[i].userPwd+"</td>" +
+                                    "</tr>";
+                            }
+                        }else{
+                            alert(this.status);
+                        }
+                    }
+                }
+                xhr.open("GET", "/serv/json", true);
+                xhr.send();
+            }
+        }
+    </script>
+    <button id="show">展示列表</button>
+    <table border="1px" width="50%">
+        <tr>
+            <th>编号</th>
+            <th>用户名</th>
+            <th>密码</th>
+        </tr>
+        <tbody id="body"></tbody>
+    </table>
+</body>
+</html>
