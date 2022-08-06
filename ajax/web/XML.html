@@ -5,6 +5,41 @@
     <title>Title</title>
 </head>
 <body>
-
+    <script type="text/javascript" src="JQuery-01.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btn").click(function () {
+                let xhr = new XMLHttpRequest();
+                var html = "";
+                xhr.onreadystatechange = function () {
+                    if (this.readyState === 4) {
+                        if (this.status === 200) {
+                            let document = this.responseXML;
+                            let student = document.getElementsByTagName("student");
+                            for (let i in student) {
+                                let attribute = student[i].childNodes;
+                                for (let j in attribute) {
+                                    if (attribute[j].nodeName === "id") {
+                                        html += "id = " + attribute[j].textContent
+                                    }else if (attribute[j].nodeName === "name"){
+                                        html += "name = " + attribute[j].textContent
+                                    }
+                                    html += "&nbsp;"
+                                }
+                                html += "<br>"
+                            }
+                            $("#div").html(html)
+                        }else {
+                            alert(this.status)
+                        }
+                    }
+                }
+                xhr.open("GET", "/ajax/xml", true)
+                xhr.send()
+            })
+        })
+    </script>
+    <button id="btn"> 基于XML进行数据交换 </button>
+    <div id="div"></div>
 </body>
 </html>

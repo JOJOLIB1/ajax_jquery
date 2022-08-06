@@ -2,6 +2,7 @@ JQuery = function (selector) {
     // 封装document.getElementById
     if (typeof selector === "string") {
         if (selector.charAt(0) === "#") {
+            // 全局变量不会销毁,不影响后面使用
             domObj = document.getElementById(selector.substring(1))
         }else if (selector.charAt(0) === ".") {
             domObj = document.getElementsByClassName(selector.substring(1))
