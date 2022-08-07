@@ -14,6 +14,22 @@
             })
         })
     </script>
+    <script>
+        $(function () {
+            $("#send").click(function () {
+                $.ajax({
+                    method : "GET",
+                    url : "/ajax/demo",
+                    async : true,
+                    data : "key=value",
+                    help : function (content) {
+                        $("#div").html(content)
+                    }
+                })
+            })
+        })
+    </script>
+    <input type="button" value="发送ajax请求" id="send">
     <input type="text" id="btn">
     <div id="div"></div>
 </body>

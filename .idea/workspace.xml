@@ -7,10 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91beaec2-2c05-471a-85fe-27768f98c52f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ajax/src/servlet/XMLServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/src/bean/Area.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/src/servlet/AreaServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/web/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajax/web/JQuery-01.js" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/web/JQuery-01.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajax/web/XML.html" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/web/XML.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax/web/测试.html" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/web/测试.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,6 +198,8 @@
       <workItem from="1659751344631" duration="1268000" />
       <workItem from="1659752644722" duration="222000" />
       <workItem from="1659752990411" duration="1110000" />
+      <workItem from="1659754184783" duration="67000" />
+      <workItem from="1659838772993" duration="5342000" />
     </task>
     <task id="LOCAL-00001" summary="AJAX_8_4">
       <created>1659670698135</created>
@@ -218,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659709544020</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="代码完善">
+      <created>1659754236629</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659754236629</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +238,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AJAX_8_4" />
     <MESSAGE value="JQuery初步封装与使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="JQuery初步封装与使用" />
+    <MESSAGE value="代码完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码完善" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
