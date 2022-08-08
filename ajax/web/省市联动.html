@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>省市联动</title>
+</head>
+<body>
+    <script type="text/javascript" src="/ajax/JQuery-01.js"></script>
+    <script>
+        $(function () {
+            $.ajax({
+                method : "GET",
+                url : "/ajax/area",
+                async : true,
+                help : function (jsons) {
+                    let html = "<option value=\"\">--省份--</option>"
+                    for (let i in jsons) {
+                        html += "<option value='" + jsons[i].code + "'>" + jsons[i].name + "</option>"
+                    }
+                    $("#province").html(html)
+                }
+            })
+            $("#province").change(function () {
+                $.ajax({
+                    method : "GET",
+                    url : "/ajax/area",
+                    async : true,
+                    data : "code=" + this.value,
+                    help : function (jsons) {
+                        let html = "<option value=\"\">--市区--</option>"
+                        for (let i in jsons) {
+                            html += "<option value='" + jsons[i].code + "'>" + jsons[i].name + "</option>"
+                        }
+                        $("#city").html(html)
+                    }
+                })
+            })
+        })
+    </script>
+    <select id="province">
+    </select>
+    <select id="city">
+    </select>
+</body>
+</html>
