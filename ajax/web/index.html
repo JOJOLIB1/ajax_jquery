@@ -2,44 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>省市联动</title>
+    <title>联想查询与自动补全</title>
 </head>
 <body>
-    <script type="text/javascript" src="/ajax/JQuery-01.js"></script>
+    <script type="text/javascript" src="/ajax/js/jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
-            $.ajax({
-                method : "GET",
-                url : "/ajax/area",
-                async : true,
-                help : function (jsons) {
-                    let html = "<option value=\"\">--省份--</option>"
-                    for (let i in jsons) {
-                        html += "<option value='" + jsons[i].code + "'>" + jsons[i].name + "</option>"
-                    }
-                    $("#province").html(html)
-                }
-            })
-            $("#province").change(function () {
+            $("#txt").keyup(function () {
                 $.ajax({
-                    method : "GET",
-                    url : "/ajax/area",
+                    type : "GET",
+                    url : "/ajax/data",
                     async : true,
-                    data : "code=" + this.value,
-                    help : function (jsons) {
-                        let html = "<option value=\"\">--市区--</option>"
+                    data : "data=" + this.value,
+                    success : function (jsonsString) {
+                        let jsons = JSON.parse(jsonsString);
+                        let html = "";
                         for (let i in jsons) {
-                            html += "<option value='" + jsons[i].code + "'>" + jsons[i].name + "</option>"
+                            html += "<p onclick='func(\""+jsons[i].data+"\")'>"+jsons[i].data+"</p>"
                         }
-                        $("#city").html(html)
+                        $("#div").html(html)
+                        $("#div").css("display", "block")
+                        if ($("#txt").val() === "")
+                            $("#div").css("display", "none")
                     }
                 })
             })
         })
+        func = function (content) {
+            $("#txt").val(content)
+            $("#div").css("display", "none")
+        }
     </script>
-    <select id="province">
-    </select>
-    <select id="city">
-    </select>
+    <style type="text/css">
+        #txt {
+            width: 300px;
+            height: 30px;
+            font-size: 20px;
+            padding-left: 10px;
+        }
+        #div {
+            width: 315px;
+            background: antiquewhite;
+            display: none;
+        }
+        #div p {
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+        #div p:hover {
+            border: darkblue 2px solid;
+            cursor: pointer;
+        }
+    </style>
+    <input type="text" id="txt">
+    <div id="div">
+    </div>
 </body>
 </html>

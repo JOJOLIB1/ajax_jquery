@@ -7,12 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91beaec2-2c05-471a-85fe-27768f98c52f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ajax/src/bean/Area.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/src/servlet/AreaServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/src/bean/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/src/servlet/DataServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/web/js/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/web/jsonp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/web/省市联动.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/web/设置响应头.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajax/web/JQuery-01.js" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/web/JQuery-01.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajax/web/测试.html" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/web/测试.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/web/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +59,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Push/ajax_jquery/ajax/web/WEB-INF/lib&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Push/ajax_jquery/ajax/web/js&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -65,6 +68,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Push\ajax_jquery\ajax\web\js" />
       <recent name="E:\Push\ajax_jquery\ajax\web\WEB-INF\lib" />
       <recent name="E:\Push\ajax_jquery\ajax\src" />
     </key>
@@ -199,7 +203,10 @@
       <workItem from="1659752644722" duration="222000" />
       <workItem from="1659752990411" duration="1110000" />
       <workItem from="1659754184783" duration="67000" />
-      <workItem from="1659838772993" duration="5342000" />
+      <workItem from="1659838772993" duration="5657000" />
+      <workItem from="1659844969227" duration="25000" />
+      <workItem from="1659867234448" duration="809000" />
+      <workItem from="1659962137570" duration="5705000" />
     </task>
     <task id="LOCAL-00001" summary="AJAX_8_4">
       <created>1659670698135</created>
@@ -229,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659754236629</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="盛世联动的完成 与 jQuery封装的进一步完善">
+      <created>1659844202962</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659844202962</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +253,8 @@
     <MESSAGE value="AJAX_8_4" />
     <MESSAGE value="JQuery初步封装与使用" />
     <MESSAGE value="代码完善" />
-    <option name="LAST_COMMIT_MESSAGE" value="代码完善" />
+    <MESSAGE value="盛世联动的完成 与 jQuery封装的进一步完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="盛世联动的完成 与 jQuery封装的进一步完善" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
