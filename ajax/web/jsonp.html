@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript" src="/ajax/js/jquery-3.6.0.min.js"></script>
+<!--    <script type="text/javascript">
+        $(function () {
+            func = function (json) {
+                alert(json.name)
+            }
+            $("#btn").click(function () {
+                $.ajax({
+                    type : "GET",
+                    url : "/ajax/target",
+                    async : true,
+                    data : "t" + new Date().getTime(),
+                    dataType : "jsonp",
+                    jsonp : "callback",
+                    // 这里不可以直接写回调函数
+                    jsonpCallback : "func"
+                })
+            })
+        })
+    </script>-->
+
+    <script>
+        func = function () {
+            alert("做某些事")
+        }
+        window.onload = function () {
+            document.getElementById("btn").onclick = function () {
+                let script = document.createElement("script");
+                script.type = "text/javascript"
+                script.src = "/ajax/target?callback=func"
+                let body = document.getElementsByTagName("body");
+                body[0].appendChild(script)
+            }
+        }
+    </script>
+    <button id="btn">发送jsonp请求</button>
+</body>
+</html>

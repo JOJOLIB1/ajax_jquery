@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>代理机制</title>
+</head>
+<body>
+    <script type="text/javascript" src="/ajax/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#mbtn").click(function () {
+                $.ajax({
+                    type : "GET",
+                    url :  "http://localhost:8080/ajax/agency",
+                    async : true,
+                    success : function (jsonStr) {
+                        $("#div").html(JSON.parse(jsonStr).name)
+                    }
+                })
+            })
+        })
+    </script>
+    <button id="mbtn">点击实现代理机制</button>
+    <div id="div"></div>
+</body>
+</html>
